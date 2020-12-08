@@ -1,33 +1,22 @@
-const parentList = [
-  {
-    name: "Marcos Maia",
-    children: "Clarice",
-  },
-  {
-    name: "João Paulo",
-    children: "Pedro",
-  },
-  {
-    name: "Fernanda",
-    children: "Rosa",
-  },
-  {
-    name: "Patricia",
-    children: "Ana",
-  },
-  {
-    name: "Lucas",
-    children: "Samira",
-  },
+const eplusDevList = [
+  "Parça",
+  "Galego",
+  "Xará",
+  "Baqueta",
+  "Na",
+  "Lindo",
+  "Pablito",
+  "Bahia"
+];
 
-]
+function listDevs() {
+    eplusDevList.map((list) => {
+    console.log(list);
 
-function getParent(list, children){
-  return
+    return list.toUpperCase();
+  });
 }
 
-const parent = getParent(parentList, 'Pedro')
+listDevs(eplusDevList);
 
-console.log(parent)
-
-//a função deve retornar o nome do pai de acordo com o nome de seu filho passado no segundo parâmetro 
+//a função deve dar console.log em cada um dos desenvolvedores da e-plus.
